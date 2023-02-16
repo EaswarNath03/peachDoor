@@ -46,15 +46,19 @@ button {
 }
 
 .titleText {
-    color: white;
-    height: 90vh;
-    font-family: titleInfo;
-    font-size: 70px;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  color: white;
+  background-image: url("/assets/images/Colors.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 90vh;
+  font-family: titleInfo;
+  font-size: 70px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .scrollText {
