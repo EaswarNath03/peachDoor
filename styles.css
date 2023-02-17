@@ -9,16 +9,16 @@
 }
 
 body{
-    background-color: #212121;
-    overflow-x: hidden;
+  background-color: #212121;
+  overflow-x: hidden;
 }
 
 .navigation {
     display: block;
     text-align: center;
     height: 10vh;
+    max-width: 100%;
     padding-top: 35px;
-    position: fixed;
     transition: 0.4s;
   top: 0;
   z-index:9;
@@ -33,8 +33,7 @@ a {
 
 button {
     font-weight: 600;
-    padding: 2px 15px;
-    margin: 0px 20px;
+    margin: 0px auto;
     background-color: transparent;
     color: aliceblue;
     border: none;
@@ -51,9 +50,9 @@ button {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  height: 90vh;
+  height: 80vh;
   font-family: titleInfo;
-  font-size: 70px;
+  font-size: 50px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -100,13 +99,14 @@ button {
 }
 
 .joinUsSection {
-    margin: 10%;
-    height: auto;
-    color: #FFF; 
+  margin-top: 10%;
+  margin-bottom: 5%;
+  height: auto;
+  color: #FFF; 
 }
 
 #joinUsTitle {
-    font-size: 80px !important;
+  font-size: 80px !important;
 }
 
 #joinUsForm {
@@ -184,17 +184,18 @@ button {
     border: 4px solid #4070F4;
   }
 
-  .button{
-    border: none;
-    font-size: 16px;
-    color: #FFF;
-    padding: 8px 16px;
-    background-color: #4070F4;
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
+.button {
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
   .button:hover{
     background: #265DF2;
   }
@@ -251,3 +252,31 @@ button {
       display: none;
     }
   }
+
+@media screen and (max-width: 360px) {
+
+  .titleText {
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    font-size: medium;
+  }
+
+  #joinUsTitle {
+    font-size: 50px !important;
+  }
+
+  .footerImg {
+    height: 10vh;
+    width: 25vh;
+  }
+  
+  .socialLogo {
+    transform: scale(0.7);
+  }
+}

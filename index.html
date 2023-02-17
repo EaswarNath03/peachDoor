@@ -16,42 +16,51 @@
     />
 </head>
 <body>
-    <section>
-        <div class="navigation" id="navigation">
-            <button><a href="#titleText">Home</button>
-            <button><a href="#aboutUs">About Us</a></button>
-            <button><a href="#services">Services</a></button>
-            <button class="joinUs"><a href="#joinUs">Join Us</a></button>
+    <header>
+        <div class="navigation row" id="navigation">
+            <div class="container-fluid justify-content-md-center">
+                <div class="col-12">
+                    <button><a href="#titleText">Home</button>
+                    <button><a href="#aboutUs">About Us</a></button>
+                    <button><a href="#services">Services</a></button>
+                    <button class="joinUs"><a href="#joinUs">Join Us</a></button>
+                </div>
+            </div>
         </div>
-        
-        <div class="titleText" id="titleText">
-            <p>OPEN THE DOOR FOR</p>
-            <p>ENTERTAINMENTS</p>
-        </div>
+    </header>
 
-        <div class="scrollText">
-            <p>scroll to open door</p>
-        </div>
-        
-        <div class="scrollIcon"><i class="fa fa-map-pin fa-2x" aria-hidden="true"></i></div>
-        
-    </section>
+<section>
+
+    <div class="titleText container-fluid text-center" id="titleText">
+        <p>OPEN THE DOOR FOR</p>
+        <p>ENTERTAINMENTS</p>           
+    </div>
+    
+    
+    
+    <div class="scrollText">
+        <p>scroll to open door</p>
+    </div>
+    
+    <div class="scrollIcon"><i class="fa fa-map-pin fa-2x" aria-hidden="true"></i></div>
+</section>
 
     <section class="container aboutUs" id="aboutUs">
         <div class="row justify-content-center">
-            <div class="col-lg-6 offset-2">
+            <div class="col-lg-2 col-xs-0"></div>
+            <div class="col-lg-6 col-xs-12">
                 <h3 class="aboutUsTitle">ABOUT US</h3>
                 <br/>
                 <p>At THE PEACH DOOR we believe in the fundamental art of story-telling and how stories connect us as humans. Every brand, every company and every business has a story to tell. We work with you to capture that story and connect with your customer and clients. We believe that your branding does not only have to be beautiful but that through connecting to the heart of your company and brand, We can open up a world of possibilities.</p>
 
              <p>Upon Starting.....</p>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-xs-12 ">
                 <img src="assets/images/AbtPng.png"  class="card-img-top" alt="..." />
             </div>
         </div>
     </section>
-
+ 
     <section id="services">
         <div class="contianer text-center">
           <span class="servicesTitle">SERVICES WE PROVIDE</span>
@@ -114,11 +123,11 @@
         </div>
 
     </section>
-
-    <section class="container joinUsSection" id="joinUs">
+ 
+    <section class="container-fluid joinUsSection" id="joinUs">
       <div class="row justify-content-center">
-        <div class="col-6">
-          <div class="card " id="joinUsForm" style="width: 35rem;">
+        <div class="col-md-6">
+          <div class="card" id="joinUsForm">
             <div class="card-body">
               <br>
               <h5 class="card-title text-center" id="joinUsTitle">JOIN US</h5><br><br>
@@ -150,23 +159,23 @@
 
       
     </section>
-
+    
     <footer id="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-xs-3">
                     <img class="footerImg" src="./assets/images/logo.png" alt="Logo">
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-xs-3">
                     <h4>Contact Us</h4>
                     <p><i class="fa fa-envelope" aria-hidden="true"></i> &nbsp; &nbsp;thepeachdoor.entertainments@gmail.com</p>
                     <p><i class="fa fa-phone-square" aria-hidden="true"></i> &nbsp; &nbsp;+91 9014936296</p>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-xs-12">
                     <h4>Follow Us</h4>
-                    <a class="btn" href="#!"role="button"><img src="./assets/images/insta.png" alt="Instagram"></a>
-                    <a class="btn" href="#!"role="button"><img src="./assets/images/facebook.png" alt="Instagram"></a>
-                    <a class="btn" href="#!"role="button"><img src="./assets/images/youtube.png" alt="Instagram"></a>
+                    <a class="btn" href="#!"role="button"><img src="./assets/images/insta.png" class="socialLogo" alt="Instagram"></a>
+                    <a class="btn" href="#!"role="button"><img src="./assets/images/facebook.png" class="socialLogo" alt="Instagram"></a>
+                    <a class="btn" href="#!"role="button"><img src="./assets/images/youtube.png" class="socialLogo" alt="Instagram"></a>
                 </div>
             </div>
         </div>
@@ -179,30 +188,5 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-
-    <!-- Firebase -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyBg1PW2ow-s1JusHGWyTecquELsMUR5-DI",
-          authDomain: "peach-door.firebaseapp.com",
-          projectId: "peach-door",
-          storageBucket: "peach-door.appspot.com",
-          messagingSenderId: "858917007936",
-          appId: "1:858917007936:web:0244e8e6143f10ad2225a5",
-          measurementId: "G-Z6MBSH29R9"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-      </script>
 </body>
 </html>
