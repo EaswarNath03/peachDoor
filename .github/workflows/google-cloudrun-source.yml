@@ -52,7 +52,7 @@ on:
 
 env:
   PROJECT_ID: friendly-joy-378403 # TODO: update Google Cloud project id
-  SERVICE: 1095525188651-compute@developer.gserviceaccount.com # TODO: update Cloud Run service name
+  SERVICE: thepeachdoor # TODO: update Cloud Run service name
   REGION: asia_south1 # TODO: update Cloud Run service region
 
 jobs:
