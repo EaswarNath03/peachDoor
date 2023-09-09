@@ -51,7 +51,7 @@ on:
 env:
   PROJECT_ID: friendly-joy-378403 # TODO: update Google Cloud project id
   GAR_LOCATION: asia-south1 (Mumbai) # TODO: update Artifact Registry location
-  SERVICE: thepeachdoor # TODO: update Cloud Run service name
+  SERVICE: 1095525188651-compute@developer.gserviceaccount.com # TODO: update Cloud Run service name
   REGION: asia-south1 # TODO: update Cloud Run service region
 
 jobs:
