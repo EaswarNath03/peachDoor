@@ -74,7 +74,7 @@ jobs:
         uses: 'google-github-actions/auth@v0'
         with:
           workload_identity_provider : '${{ secrets.WIF_PROVIDER }}'
-          service_provider : '${{ secrets.PD_CREDS }}'
+          service_provider : '${{ secrets.WIF_PROVIDER }}'
           #credentials_json: '${{ secrets.PD_CREDS }}'
 
       - name: Deploy to Cloud Run
